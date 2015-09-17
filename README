@@ -1,0 +1,13 @@
+This code was written to reduce the data in my 2nd published paper (Jimmy et al. 2015).  It is not pretty and it's not well written or documented because I was in a rush to finish, but I've sort of made a promise to myself that I will release all the code that I use to write each paper so that my methods are completely transparent.
+
+This project may have some dependency upon code written for my fist paper which is available here: https://github.com/gnatman/Jimmy---the-BCGs
+Also, since I haven't updated that repository since the paper was published, my local versions of the scripts called from Jimmy & the BCGs may not be compatible.  If anyone actually ends up using this code and runs into problems with incompatibilities with the first project, contact me and we can work it all out.  There will almost certainly be issues because I switched from IDL to python between the 1st and 2nd project.
+
+In order to run trouble_trouble_trouble, you will definitely need Adam Ginsberg's gaussfitter routines found here: https://github.com/keflavich/gaussfitter
+
+You may notice a certain theme to the names of the files, they were inspired by the music I was listening to heavily when I first started writing the code.  What follows is a short description of the files and what they do:
+
+trouble_trouble_trouble - This is the main routine, which measures the emission lines from the blended VIMOS LR Blue Grism data.
+fakers_gonna_fake - A tool to create a simulated galaxy within an empty IFU datacube.  
+players_gonna_play - A tool to produce the comparison between the input and recovered parameters for the simulated galaxies produced by fakers_gonna_fake.
+sorry_just_for_show - This produces all the analysis plots that were used for the paper.
